@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en_US"
+    class="">
+  <head>
+    <base href="https://onlinecourses.nptel.ac.in/noc16_hs01/" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" href="/modules/nptel/assets/img/favicon.ico"/>
+    <meta charset="utf-8">
+    
+  <title>
+    Technical English for Engineers -
+    
+  - Unit 1 - How to access the portal
+
+  </title>
+
+    <!-- jQuery should be imported first -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="/modules/ajax_registry/assets/js/registry.js"></script>
+
+
+    <!-- The following translated strings are used in activity-generic.js and should be
+    declared before that file is imported. -->
+    <script>
+      // inline translations
+      var trans = {};
+
+      
+      trans.CHECK_ANSWER_TEXT =
+          " Check Answer ";
+
+      
+      trans.CHECK_ANSWERS_TEXT =
+          " Check Answers ";
+
+      
+      trans.SHOW_ANSWER_TEXT =
+          " Skip and Show Answer ";
+
+      
+      trans.SAVE_ANSWERS_TEXT =
+          " Save Answers ";
+
+      
+      trans.SAVE_DRAFT_TEXT =
+          " Save Draft ";
+
+      
+      trans.SUBMIT_ANSWERS_TEXT =
+          " Submit Answers ";
+
+      
+      trans.SUBMIT_ASSIGNMENT_TEXT =
+          " Submit Assignment ";
+
+      
+      trans.SUBMIT_REVIEW_TEXT =
+          " Submit Review ";
+
+      
+      trans.SELECT_ANSWER_PROMPT =
+          " Please click one of the buttons for your answer. ";
+
+      
+      trans.ALL_CORRECT_TEXT =
+          " All your answers are correct! ";
+
+      
+      trans.NUM_CORRECT_TEXT =
+          " Number of questions you answered correctly ";
+
+      
+      trans.YOUR_SCORE_TEXT =
+          " You received a score on this assessment of ";
+
+      
+      trans.LESSONS_TO_REVIEW_TEXT =
+          " Here are lessons you could review to improve your score ";
+
+      
+      trans.PERFECT_SCORE_SAVE_TEXT =
+          " Congratulations! Press the \&#39;Submit Answers\&#39; button to submit your grade. ";
+
+      
+      trans.GENERIC_SAVE_TEXT =
+          " Press the \&#39;Submit Answers\&#39; button below to save your scores. You can also edit your answers above before clicking \&#39;Submit Answers\&#39;. ";
+
+      
+      trans.SUBMIT_ASSIGNMENT_CONFIRMATION =
+          " Are you sure you want to submit this assignment? ";
+
+      
+      trans.SUBMIT_REVIEW_CONFIRMATION =
+          " Are you sure you want to submit this review? ";
+
+      
+      trans.CONFIRMATION_EXPLANATION =
+          " You cannot edit or delete it after you have done so. ";
+    </script>
+
+    
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="icon" href="assets/img/favicon.ico" />
+  <link href="assets/css/main.css" rel="stylesheet" type="text/css">
+  <link href="/modules/nptel/assets/css/nptel.css" rel="stylesheet" type="text/css">
+
+  <link href="assets/css/minimal.mobile.css" rel="stylesheet" type="text/css"
+        media="only screen and (max-device-width: 1024px)">
+
+  <!-- jQuery should be imported first -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+  <script src="/modules/oeditor/resources/butterbar.js"></script>
+  <link rel="stylesheet" type="text/css"
+      href="/modules/oeditor/resources/butterbar.css" media="screen" />
+  <script src="/modules/nptel/assets/js/main.js"></script>
+
+  <script src="//www.google.com/jsapi" type="text/javascript"></script>
+  <script type='text/javascript'>
+    function addScript(src, callback) {
+      var r = false;
+      var existed = true;
+      var element = document.getElementById(src);
+      if (!element) {
+        existed = false;
+        element = document.createElement('script');
+        element.src = src;
+        element.type = 'text/javascript';
+        element.setAttribute('id', src);
+      }
+      if (callback != null) {
+        element.onload = element.onreadystatechagne = function() {
+          if (!r && (!this.readyState || this.readyState == 'complete')) {
+            r = true;
+            callback();
+          }
+        }
+      }
+      if (!existed) document.body.appendChild(element);
+    }
+    function getStudentProgress() {
+      
+      ajax_server.get_progress();
+      
+    }
+    function prettyfyCode() {
+      prettyPrint();
+    }
+    function showButterBar() {
+      
+      var regConfirmationMsg = "Thank you for registering for the course. Click the Announcements tab for important information.";
+      if(window.location.hash == '#registration_confirmation') {
+        cbShowMsg(regConfirmationMsg);
+        setTimeout(function() {cbHideMsg();}, 20000);
+      }
+      
+      var regClosedMsg = "Registrations for this course are not open.";
+      if(window.location.hash == '#registration_closed') {
+        cbShowMsg(regClosedMsg);
+        setTimeout(function() {cbHideMsg();}, 20000);
+      }
+    }
+    function loadOtherJs(callback) {
+      var c = getStudentProgress;
+      if (null != callback) {
+        c = function() {
+           callback();
+           getStudentProgress();
+        }
+      }
+      addScript('/assets/lib/google-code-prettify/prettify.js', prettyfyCode);
+      addScript('/modules/nptel/assets/js/activity-generic-1.3.js', null);
+      addScript('/modules/nptel/assets/js/main.js', c);
+    }
+    function downloadJsAtLoad() { loadOtherJs(null); }
+    google.setOnLoadCallback(downloadJsAtLoad);
+  </script>
+ 
+    <script src='/assets/lib/google-code-prettify/prettify.js' type='text/javascript'></script>
+    <script src='//modules/nptel/assets/js/activity-generic-1.3.js' type='text/javascript'></script>
+    <script src='/modules/nptel/assets/js/butterbar.js' type='text/javascript'></script>
+    <script src='/modules/nptel/assets/js/main.js' type='text/javascript'></script>
+  
+
+
+
+    
+      <link rel="stylesheet" href="/modules/i18n_dashboard/resources/css/global_i18n.css" type="text/css">
+    
+
+    
+
+    <script>
+      var eventXsrfToken = '1451917418/upXi5zVmoQrUV8TqxnSU7Q==';
+      
+        var gcbCanPostTagEvents = true;
+      
+      
+        var gcbCanPostPageEvents = true;
+      
+      
+        var gcbCanPostEvents = true;
+      
+
+      
+        var transientStudent = false;
+      
+    </script>
+
+    
+      <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+    
+
+    <script>
+      function gcb_edit_hook_point(key) {
+        window.location=('dashboard?action=edit_html_hook&key=' +
+            encodeURIComponent(key));
+      }
+      $(function() {
+        function parseJson(s) {
+          var xssiPrefix = ")]}'";
+          return JSON.parse(s.replace(xssiPrefix, ''));
+        }
+
+        $("#locale-select").change(function() {
+          var localeSelect = $("#locale-select");
+          var request = JSON.stringify({
+            xsrf_token: localeSelect.data("xsrf-token"),
+            payload: {
+              selected: localeSelect.val()
+            }
+          });
+          $.ajax({
+            url: "rest/locale",
+            type: "POST",
+            data: {request: request},
+            dataType: "text",
+            success: function(data) {
+              data = parseJson(data);
+              if (data.status == 200) {
+                window.location.reload();
+              }
+            }
+          });
+        });
+      });
+    </script>
+
+    
+    
+
+    <div class="gcb-html-hook" id="base-before-head-tag-ends"><!-- base.before_head_tag_ends --></div>
+  </head>
+
+  <body data-gcb-page-locale="en_US">
+    <div class='invisiblePopupDiv' id='termsDiv'>
+       <div class='gcb-pull-right'>
+       <a class='closeXButton' onClick='hidePopupDiv("termsDiv"); return false;'>X</a>
+       </div>
+       <iframe src='/modules/nptel/assets/html/terms.html' class='popupIframe'></iframe>
+      </div>
+    <div class='invisiblePopupDiv' id='honorDiv'>
+       <div class='gcb-pull-right'>
+       <a class='closeXButton' onClick='hidePopupDiv("honorDiv"); return false;'>X</a>
+       </div>
+       <iframe src='/modules/nptel/assets/html/honor_code.html' class='popupIframe'></iframe>
+      </div>
+    <div class='invisiblePopupDiv' id='faqDiv'>
+       <div class='gcb-pull-right'>
+       <a class='closeXButton' onClick='hidePopupDiv("faqDiv"); return false;'>X</a>
+       </div>
+       <iframe src='/modules/nptel/assets/html/faq.html' class='popupIframe'></iframe>
+    </div>
+
+    <div class="gcb-html-hook" id="base-after-body-tag-begins"><!-- base.after_body_tag_begins --></div>
+
+    <script>
+      // Course-Builder specific setup for Google Tag Manager.  Iff
+      // Tag Managers is enabled, the values in the dataLayer list of
+      // dicts is made available to Tag Manager macros.
+      dataLayer = [{
+        'course_title': 'Technical English for Engineers',
+        'event': 'default',  // Explicit value meaning not-really-set.
+        }];
+
+      function gcbSetPageInfo(dict) {
+        dataLayer.push(dict);
+      }
+
+      // Invoke page-specific block so that any calls to gcbReportPageInfo()
+      // are made before we hit the Tag Manager call, below.
+      
+  if ('gcbSetPageInfo' in window) {
+    gcbSetPageInfo({
+      'page_type': 'unit',
+      'unit_id': '1',
+      
+        'lesson_id': '5',
+      
+      
+    });
+  }
+
+    </script>
+
+    
+
+    <!-- ButterBar -->
+    <div class="gcb-butterbar-container">
+      <div id="gcb-butterbar-top" class="gcb-butterbar" style="margin-top:50px" aria-live="polite">
+        <p id="gcb-butterbar-message"></p>
+        <a id="gcb-butterbar-close">X</a>
+      </div>
+    </div>
+
+    <!-- logo bar -->
+     <div id="gcb-header" role="banner"  
+       
+        style="background: #EB8024 !important;" 
+      >
+    <div class="gcb-header-aux">
+      <div class="gcb-aux clearfix">
+        <p class="gcb-course-image">
+          <a id="gcb-header-logo" href="./">
+            
+              <img src="https://onlinecourses.nptel.ac.in/noc16_hs01/assets/img/aricent%20sponsored.jpg"
+                   alt="">
+            
+          </a>
+        </p>
+
+     
+       <div class="gcb-username" onmouseover='showMenu()' onmouseout='hideMenu()'>
+          Pranay.Patil0@gmail.com <small>▼</small>
+          
+          <div class="gcb-profile" id="logout-div" >
+            
+              
+                <a href="/explorer/profile">Profile</a>
+              
+            
+            
+            
+            <a href="https://onlinecourses.nptel.ac.in/_ah/logout?continue=https://www.google.com/accounts/Logout%3Fcontinue%3Dhttps://appengine.google.com/_ah/logout%253Fcontinue%253Dhttps://onlinecourses.nptel.ac.in/noc16_hs01/unit%25253Funit%25253D1%252526lesson%25253D5%26service%3Dah">
+              
+              Logout
+            </a>
+          </div>
+       </div>
+     
+         </div>
+      </div>
+    </div>
+
+    
+  <!-- nav bar -->
+  <div class="gcb-nav gcb-complex" id="gcb-nav-x">
+    <div class="gcb-aux">
+      <a class="gcb-nav-course-title" href="/explorer">Courses</a>
+      <span class="gcb-nav-course-title">&raquo;</span>
+      <a class="gcb-nav-course-title" href="course">Technical English for Engineers</a>
+      <div class="gcb-pull-right"><ul class="clearfix">
+
+        <!-- left-aligned links in order -->
+        <div class="gcb-html-hook" id="base-after-navbar-begins"><!-- base.after_navbar_begins --></div>
+        <li >
+          
+          <a href="announcements">Announcements</a>
+        </li>
+        
+          <li >
+            
+            <a href="forum">Forum</a>
+          </li>
+        
+        
+          <li >
+            
+            <a href="student/home">Progress</a>
+          </li>
+         
+        
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+    <!-- top section -->
+    
+   <div id="gcb-main-body">
+    <div class="is-wrapper">
+      <div class="gcb-aux">
+        
+
+        <div class="gcb-html-hook" id="base-after-top-content-ends"><!-- base.after_top_content_ends --></div>
+
+        <!-- main section -->
+        
+
+<script>
+  var questionData = {};
+  questionData.scored = true;
+</script>
+
+
+<div id="gcb-main">
+  <div id="gcb-left-nav-toggle">
+    <a href="" class="gcb-button">
+      <span class='show'>
+        
+        Show Syllabus
+      </span>
+      <span class='hide'>
+        
+        Hide Syllabus
+      </span>
+    </a>
+  </div>
+  <script>
+    $('#gcb-left-nav-toggle a').click(function(){
+        if ($(this).hasClass('show')) {
+            $(this).removeClass('show');
+            $('#gcb-nav-y').hide();
+            $('.gcb-unit-header').show('fast');
+            $('#gcb-nav-y + .gcb-article').show('fast');
+        } else {
+            $(this).addClass('show');
+            $('#gcb-nav-y').show('fast');
+            $('.gcb-unit-header').hide();
+            $('#gcb-nav-y + .gcb-article').hide();
+        }
+        return false;
+    });
+  </script>
+
+  <ul id="gcb-breadcrumb" class="gcb-breadcrumb">
+    
+    <li><a href="course">Course</a></li>
+    <li><a href="unit?unit=1">
+      Unit 1</a></li>
+    
+      <li>
+        
+          
+          Lesson 4</li>
+      
+    
+  </ul>
+
+  
+
+  <div id="gcb-unit-header">
+    <h1 class="gcb-unit-header">
+      Unit 1 - How to access the portal
+    </h1>
+  </div>
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="gcb-nav" id="gcb-nav-left" role="navigation">
+   <div class='gcb-aside'>
+  <h2>Course outline</h2>
+
+    
+      
+        
+          <div class="unit_navbar" id="unit_navbar_1" >
+  <div  class="unit_heading" 
+    id="unit_heading_1"
+    onclick='toggleSubUnitNavBar("subunit_navbar_1")'>
+     How to access the portal </div>
+    
+      <ul class="subunit_navbar_current" id="subunit_navbar_1">
+    
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=1&lesson=2">How to access the home page?</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-2">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=1&lesson=3">How to access the course page?</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-3">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_other" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=1&lesson=4">How to access the MCQ, MSQ and Programming assignments?</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-4">
+</div>
+      
+    </div></li>
+    
+  
+            
+              
+    <li  class="subunit_current" >
+  <div class="gcb-left-activity-title-with-progress gcb-nav-pa">
+      <a href="unit?unit=1&lesson=5">How to access the subjective assignments?</a>
+      
+        <div class="gcb-progress-icon-holder"><img src="/modules/nptel/assets/img/not_started.png"
+    alt="Not Started"
+    title="Not Started"
+    class="gcb-progress-icon"
+    id="progress-state-html-5">
+</div>
+      
+    </div></li>
+    
+  
+            
+            
+          </ul></div>
+        
+      
+    
+    &nbsp;
+  </div>
+
+  
+    
+  
+
+</div>
+  
+
+  <div id="gcb-main-article" class="gcb-article tab-content" role="main">
+    <div class="gcb-html-hook" id="unit-after-content-begins"></div>
+
+    
+
+      
+        <div class="gcb-aside gcb-button-box">
+          <div class="lesson-title"><h1 class="gcb-lesson-title">How to access the subjective assignments?</h1></div>
+
+
+  <div >
+    
+  </div><!-- /gcb-cols -->
+
+  
+    
+
+ <script src="//www.youtube.com/iframe_api" type="text/javascript"></script>
+<script type='text/javascript'>
+  var questionData = {};
+  
+    questionData.scored = false;
+  
+
+  function mainf() {
+    addScript('//ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js', null);
+    installFunction('student_questions', 'relevant_questions', onRetrieveSuccess, null);
+    installFunction('student_questions', 'all_questions', onRetrieveSuccess, null);
+    installFunction('student_questions', 'submit_question', onSubmitSuccess, '1451917418/RpTsH9Uo4LnIysIjVtRw_A==');
+    installFunction('student_questions', 'inc_count', noopCallback, '1451917418/ncgLjY_f65Zc2EA9zBM8WA==');
+    installFunction('modules/watch_time/video_watchtime', 'record_video_watchtime', noopCallback, '1451917418/M6pq2gjFtYOtHWSyWAQqSQ==');
+    loadIFramePlayer("ylaHpQ2bwbk", 'videoDiv');
+  }
+  function _run() {
+    loadOtherJs(mainf);
+  }
+  google.setOnLoadCallback(_run);
+  // Callback for after a successful doAdd
+  function onRetrieveSuccess(response) {
+    element('lessonDoubtButton').style.display = 'none';
+    formatRetreivedQuestions(
+        element('retrievedQuestionsList'),
+        response,
+        'noc16-hs01-discuss',
+        '/a/nptel.iitm.ac.in');
+    element('retrievedQuestions').style.display = 'inline';
+    element('doubtForm').style.display = 'inline';
+  }
+</script>
+
+  <div class="gcb-video-container">
+    
+    <div id="videoDiv">Loading ...</div>
+     <br/>
+  </div>
+  
+    <div class="gcb-student-questions-area">
+      <div class="gcb-retrieved-question-box" id="retrievedQuestions">
+      Previously asked questions around the same time :
+        <div class="gcb-retrieved-question-list" id="retrievedQuestionsList">
+        </div>
+      </div>
+      <div class="gcb-ask-question-container" id="lessonDoubtButton">
+        <a role="button" class="gcb-button gcb-button-medium gcb-button-primary"
+          id="ask-question-button" href="javascript:void(0);"
+          onclick="retrieveQuestions( 'ylaHpQ2bwbk'); return false;" target="_blank">
+         Ask a question
+       </a>
+      </div>
+      <form id="doubtForm" style="display: none;">
+        <hr/>
+        <label class="form-label" for="doubtSummary">
+          <b>Short Description:</b>
+        </label>
+        <br/>
+        <input type="text" id="doubtSummaryField" name="doubtSummary" maxlength=50></input>
+        <br/>
+
+        <label class="form-label" for="doubtQuestion">
+          <b>Detailed question:</b>
+        </label>
+        <br/>
+        <textarea rows="4" cols="85" id="doubtQuestionField" type="text" name="doubtQuestion"></textarea>
+        <br/>
+        <br/>
+        <a style="display: inline;" role="button" class="gcb-button
+        gcb-button-primary" id="postQuestionButton" href="javascript:void(0);" onclick="submitQuestionClient('ylaHpQ2bwbk'); return false;" target="_blank">
+        Post question
+        </a>
+        &nbsp;&nbsp;&nbsp;
+        <a style="display: inline;" role="button" class="gcb-button gcb-button-primary" id="cancelButton" href="javascript:void(0);" onclick="cancel(); return false;" target="_blank">
+          Keep watching
+        </a>
+        <br/>
+        <br/>
+        <span>To post questions, you must be a member of
+          <a href="https://groups.google.com/a/nptel.iitm.ac.in/forum/#!forum/noc16-hs01-discuss" target="_blank" >Course Discussion Group!</a>
+        </span>
+      </form>
+  </div>
+  
+
+
+
+  
+
+
+        </div><!-- /gcb-aside -->
+      
+
+      <div id="gcb-nav-button-box" class="gcb-button-box">
+        
+        <div class="gcb-prev-button">
+          
+            
+            <a href="unit?unit=1&amp;lesson=4"> Previous Page </a>
+          
+        </div>
+        <div class="gcb-next-button">
+          
+            
+            <a href="course"> End </a>
+          
+        </div>
+        
+      </div>
+    
+    <div class="gcb-html-hook" id="unit-before-content-ends"></div>
+  </div>
+</div>
+
+
+        <div class="gcb-html-hook" id="base-after-main-content-ends"><!-- base.after_main_content_ends --></div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+    <!-- footer section -->
+  <div class="gcb-footer" id="gcb-footer">
+        <div class="gcb-aux">
+        <style>
+  .gcb-terms-block2 {
+          margin: auto;
+    max-width: 500px;
+          text-align: center;
+  }
+        </style>
+        <div id="gcb-terms"  class="gcb-terms-block2">
+          <p>&copy; 2014 NPTEL -
+            <a onclick='showPopupDiv("termsDiv"); return false;'>
+              
+              Privacy &amp; Terms
+            </a> - 
+            <a onclick='showPopupDiv("honorDiv"); return false;'>
+              
+              Honor Code
+            </a> - 
+            <a onclick='showPopupDiv("faqDiv"); return false;'>
+              
+              FAQs
+            </a>
+            
+              <script type="text/javascript">
+              (function() {
+               var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+               po.src = 'https://apis.google.com/js/plusone.js?onload=onLoadCallback';
+               var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+               })();
+              </script>
+              - <span class="plusone-button" id="plusone-3" style="height: 20px; width: 70px; display: inline-block; text-indent: 0px; margin: 0px; padding: 0px; background-color: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: top; background-position: initial initial; background-repeat: initial initial; ">
+                <g:plusone size="medium"></g:plusone>
+              </span>
+            
+          </p>
+        </div>
+        </div>
+      <div id="gcb-footer-global" role="contentinfo">
+        <div class="gcb-aux">
+          <div class="footer-logo-block">
+            <section>
+              <h3>A project of</h3>
+                  <a href="http://nptel.iitm.ac.in" target="_blank">
+                  <img src="/modules/nptel/assets/img/footer-logo-nptel.png"/>
+                  </a>
+            </section>
+          </div>
+          <div class="footer-logo-block">
+            <section>
+              <h3>In association with</h3>
+                  <a href="http://www.nasscom.in" target="_blank">
+                  <img src="/modules/nptel/assets/img/footer-logo-nasscom.png"/>
+                  </a>
+            </section>
+          </div>
+          <div class="footer-logo-block">
+            <section>
+              <h3>Funded by</h3>
+                  <a href="http://mhrd.gov.in" target="_blank">
+                  <img src="/modules/nptel/assets/img/footer-mhrd.png"/>
+                  </a>
+            </section>
+          </div>
+          <div class="footer-logo-block">
+            <section>
+              <h3>Powered by</h3>
+                  <a href="http://www.google.com" target="_blank">
+                  <img src="/modules/nptel/assets/img/footer-logo-google.png"/>
+                  </a>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-46447969-1', 'nptel.ac.in');
+      ga('send', 'pageview');
+    </script>
+    
+    <div class="gcb-html-hook" id="base-before-body-tag-ends"><!-- base.before_body_tag_ends --></div>
+
+ </body>
+</html>ag_ends --></div>
+
+ </body>
+</html>
