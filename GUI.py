@@ -39,10 +39,10 @@ class Window(QtGui.QMainWindow):
         self.update()
 
     def signin(self):
-        # user = self.firstScreen.eMail.text()
-        # passWd = self.firstScreen.passWd.text()
-        user = "pranay.patil0@gmail.com"
-        passWd = "Enter Your Password"
+        user = self.firstScreen.eMail.text()
+        passWd = self.firstScreen.passWd.text()
+        # user = "pranay.patil0@gmail.com"
+        # passWd = "Enter Your Password"
         response_code, response_url = self.nptel.sign_in(user, passWd)
         self.msgBox = QtGui.QMessageBox(self)
         if response_code == 200:
